@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:orientation="vertical"
-    android:paddingTop="20px">
+    android:paddingTop="10dp">
 
     <com.zhy.autolayout.AutoLinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50px"
-        android:layout_marginBottom="30px"
+        android:layout_height="25dp"
+        android:layout_marginBottom="15dp"
         android:gravity="center_vertical"
-        android:paddingLeft="24px"
-        android:paddingRight="24px">
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
 
         <TextView
             android:id="@+id/tv_collocation_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#222222"
-            android:textSize="30px" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/tv_save_text"
             android:layout_width="wrap_content"
-            android:layout_height="40px"
-            android:layout_marginLeft="20px"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
             android:background="@drawable/shape_save_money"
             android:gravity="center"
-            android:paddingLeft="18px"
-            android:paddingRight="18px"
+            android:paddingStart="9dp"
+            android:paddingEnd="18dp"
             android:textColor="#ffffff"
-            android:textSize="24px" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="0dp"
@@ -40,24 +42,27 @@
 
         <ImageView
             android:id="@+id/iv_status"
-            android:layout_width="28px"
-            android:layout_height="18px"
-            android:layout_gravity="right|center_vertical"
-            android:src="@mipmap/icon_top" />
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="end|center_vertical"
+            android:src="@mipmap/icon_top"
+            android:contentDescription="@string/todo" />
+
     </com.zhy.autolayout.AutoLinearLayout>
 
     <com.android.byc.expanablelist.MyHorizontalScrollView
         android:id="@+id/hsv_goods_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="24px"
-        android:scrollbars="none" />
+        android:paddingStart="12dp"
+        android:scrollbars="none"
+        tools:ignore="RtlSymmetry" />
 
     <View
         android:id="@+id/v_space"
         android:layout_width="match_parent"
-        android:layout_height="20px"
-        android:layout_marginTop="20px"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
         android:background="#eeeff3"
         android:visibility="gone" />
 </com.zhy.autolayout.AutoLinearLayout>

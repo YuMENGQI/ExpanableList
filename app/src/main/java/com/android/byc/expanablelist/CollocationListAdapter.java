@@ -1,5 +1,6 @@
 package com.android.byc.expanablelist;
 
+import android.annotation.SuppressLint;
 import android.widget.ExpandableListView;
 
 import java.util.List;
@@ -33,7 +34,7 @@ public class CollocationListAdapter extends BaseExpandableListAdapter {
     private ExpandableListView elv_collocation;
     private List<CollocationPackageBean> data;
 
-    public CollocationListAdapter(Context context, ExpandableListView elv_collocation, List<CollocationPackageBean> data) {
+    CollocationListAdapter(Context context, ExpandableListView elv_collocation, List<CollocationPackageBean> data) {
         this.context = context;
         this.elv_collocation = elv_collocation;
         this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -80,6 +81,7 @@ public class CollocationListAdapter extends BaseExpandableListAdapter {
         return true;//如果子条目需要响应click事件,必需返回true
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public View getGroupView(final int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         ParentViewHolder parentViewHolder;

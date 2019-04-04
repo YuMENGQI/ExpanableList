@@ -11,18 +11,17 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private ExpandableListView elv_collocation;
-    private List<CollocationPackageBean> collocationList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        elv_collocation = (ExpandableListView) findViewById(R.id.elv_collocation);
+        elv_collocation =  findViewById(R.id.elv_collocation);
         initData();
     }
 
     private void initData() {
-        collocationList = new ArrayList<>();
+        List<CollocationPackageBean> collocationList = new ArrayList<>();
         CollocationPackageBean collocation_1 = new CollocationPackageBean();
         CollocationPackageBean collocation_2 = new CollocationPackageBean();
 

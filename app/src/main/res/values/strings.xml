@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ExpanableList</string>
+    <string name="cheap">优惠套餐</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="price">套餐价格:</string>
+    <string name="dollar">￥</string>
+    <string name="add_car">加入购物车</string>
 </resources>
